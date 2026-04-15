@@ -15,11 +15,61 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL("https://jvep.se"),
   title: {
-    default: "JV Event Planning",
+    default: "JV Event Planning – Eventkoordinator för företag & privatpersoner",
     template: "%s | JV Event Planning",
   },
   description:
-    "JV Event Planning skapar personliga, välorganiserade och minnesvärda event för företag och privatpersoner.",
+    "JV Event Planning skapar personliga, välorganiserade och minnesvärda event för företag och privatpersoner. Kickoffs, personalfester, födelsedagar och mer – i hela Sverige.",
+  keywords: [
+    "event planning",
+    "eventkoordinator",
+    "eventbyrå",
+    "företagsevent",
+    "kickoff",
+    "personalfest",
+    "födelsedag",
+    "privatfirande",
+    "eventplanering Sverige",
+    "JV Event Planning",
+    "Jacob Laurin",
+  ],
+  authors: [{ name: "Jacob Laurin", url: "https://jvep.se/om-oss" }],
+  creator: "Jacob Laurin",
+  publisher: "JV Event Planning",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "sv_SE",
+    url: "https://jvep.se",
+    siteName: "JV Event Planning",
+    title: "JV Event Planning – Eventkoordinator för företag & privatpersoner",
+    description:
+      "Personliga, välorganiserade och minnesvärda event för företag och privatpersoner. Kickoffs, personalfester, födelsedagar och mer.",
+    images: [
+      {
+        url: "/Logga-JVeventplanning.jpg",
+        width: 1200,
+        height: 630,
+        alt: "JV Event Planning – Eventkoordinator",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "JV Event Planning – Eventkoordinator för företag & privatpersoner",
+    description:
+      "Personliga, välorganiserade och minnesvärda event. Kickoffs, personalfester, födelsedagar och mer.",
+    images: ["/Logga-JVeventplanning.jpg"],
+  },
   alternates: {
     canonical: "https://jvep.se",
   },
@@ -36,6 +86,44 @@ export default function RootLayout({
       className={`${montserrat.variable} h-full scroll-smooth antialiased`}
     >
       <body className="site-shell min-h-full">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": "https://jvep.se",
+              name: "JV Event Planning",
+              description:
+                "JV Event Planning skapar personliga, välorganiserade och minnesvärda event för företag och privatpersoner.",
+              url: "https://jvep.se",
+              telephone: "+46707490323",
+              email: "jacobjvep@gmail.com",
+              image: "https://jvep.se/Logga-JVeventplanning.jpg",
+              founder: {
+                "@type": "Person",
+                name: "Jacob Laurin",
+              },
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "SE",
+              },
+              areaServed: {
+                "@type": "Country",
+                name: "Sverige",
+              },
+              knowsAbout: [
+                "Eventplanering",
+                "Eventkoordinering",
+                "Kickoff",
+                "Företagsevent",
+                "Personalfester",
+                "Privatfiranden",
+              ],
+              sameAs: [],
+            }),
+          }}
+        />
         <ScrollMotion />
         <div className="background-orb background-orb-left" />
         <div className="background-orb background-orb-right" />

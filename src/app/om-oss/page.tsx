@@ -3,9 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Om oss",
+  title: "Om oss – Jacob Laurin & JV Event Planning",
   description:
-    "Lär känna JV Event Planning och Jacob Laurin, med fokus på personliga event, struktur och trygg leverans.",
+    "Lär känna Jacob Laurin och JV Event Planning. Vi skapar personliga event med rätt struktur, trygg koordinering och genomtänkt genomförande – från idé till kväll.",
+  alternates: {
+    canonical: "https://jvep.se/om-oss",
+  },
+  openGraph: {
+    url: "https://jvep.se/om-oss",
+    title: "Om oss – Jacob Laurin & JV Event Planning",
+    description:
+      "Lär känna Jacob Laurin och JV Event Planning. Personliga event med rätt struktur och trygg koordinering.",
+  },
 };
 
 export default function AboutPage() {
@@ -14,12 +23,12 @@ export default function AboutPage() {
       <section className="subhero">
         <div className="container subhero__content reveal">
           <p className="eyebrow">Om oss</p>
-          <h1>En personlig eventpartner för människor som vill samla andra</h1>
+          <h1>Ett lugnt och tryggt sätt att komma vidare</h1>
           <p>
-            JV Event Planning finns för kunder som vill skapa välplanerade och
-            minnesvärda event utan att fastna i detaljerna själva. Vi tror på
-            tydlig struktur, varm kommunikation och lösningar som känns lika
-            genomtänkta som naturliga.
+            JV Event Planning tror på det personliga mötet och på att ta oss
+            tid att förstå. Hos oss börjar allt med ett samtal - utan stress,
+            utan förpliktelser - där vi lyssnar in era behov och funderar
+            tillsammans på bästa vägen framåt.
           </p>
         </div>
       </section>
@@ -27,22 +36,38 @@ export default function AboutPage() {
       <section className="content-section">
         <div className="container section-grid">
           <div className="reveal">
-            <p className="eyebrow">Vilka vi är</p>
+            <p className="eyebrow">Vilka är vi?</p>
             <h2>JV Event Planning bygger event runt människor, inte mallar</h2>
           </div>
-          <div className="rich-text reveal">
-            <p>
-              För oss handlar event om mer än ett datum i kalendern. Det handlar
-              om relationer, samvaro och upplevelser som känns rätt i stunden
-              och minnesvärda efteråt. Därför börjar varje uppdrag med att förstå
-              varför eventet ska genomföras, vilka människor det är till för och
-              hur helheten ska kännas när det väl är dags.
-            </p>
-            <p>
-              Vi arbetar inte med färdiga paketlösningar. Istället skapar vi
-              koncept som anpassas efter målgrupp, budget och ambitionsnivå, med
-              en tydlig struktur som ger trygghet genom hela processen.
-            </p>
+          <div className="profile-points">
+            <article className="info-card reveal">
+              <p>
+                JV Event Planning grundades ur viljan att göra event mer
+                mänskliga. Jag upplevde att många arrangemang präglas av stress
+                och fasta mallar, där känslan och mötet mellan människor hamnar
+                i andra hand. För mig är det just där kvaliteten ligger - i
+                helheten, stämningen och minnet som lever kvar.
+              </p>
+            </article>
+            <article className="info-card reveal">
+              <p>
+                För oss börjar ett lyckat event långt innan datumet är satt.
+                Det börjar i förståelsen för människorna som ska mötas,
+                stämningen som ska skapas och upplevelsen som ska leva kvar även
+                efteråt. Vi lägger stor vikt vid helheten - från den första
+                idén till hur det faktiskt känns att vara där när allt faller på
+                plats.
+              </p>
+            </article>
+            <article className="info-card reveal">
+              <p>
+                Varje uppdrag formas utifrån unika behov och önskemål. Vi
+                arbetar nära kund, utan färdiga mallar, och skapar lösningar som
+                är genomtänkta, personliga och anpassade efter både ambition och
+                budget. Med tydlighet och struktur genom hela processen vill vi
+                att samarbetet ska kännas tryggt, smidigt och inspirerande.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -64,22 +89,26 @@ export default function AboutPage() {
               <p className="eyebrow">Grundare</p>
               <h2>Jacob Laurin</h2>
               <p>
-                Jag startade JV Event Planning för att jag såg hur många event
-                känns stressade, röriga eller opersonliga.
+                Jag grundade JV Event Planning utifrån min erfarenhet av hur
+                mycket tryggare och bättre ett event blir när rätt person håller
+                ihop helheten. När struktur, människor och detaljer samverkar
+                på rätt sätt skapas ett lugn - både för arrangör och deltagare.
               </p>
               <p>
-                För mig handlar ett event inte om ett schema, utan om känslan
-                människor tar med sig därifrån.
+                Under flera år har jag arbetat med koordinering och
+                genomförande av event i olika sammanhang och följt projekten
+                hela vägen från planering till avslutning. Den erfarenheten har
+                gett mig en god förståelse för vad som krävs för att skapa ett
+                fungerande och välbalanserat event, även när tempot är högt och
+                förutsättningarna förändras längs vägen.
               </p>
               <p>
-                Därför jobbar jag nära mina kunder, från första idé till sista
-                detalj. Det skapar ett personligt samarbete, snabb återkoppling
-                och ett genomförande som känns lugnt, tydligt och genomtänkt.
-              </p>
-              <p>
-                Jag har flera års erfarenhet av koordinering och har varit med
-                från start till slut i många olika projekt, vilket gör att jag
-                kan hålla ihop helheten även när mycket händer samtidigt.
+                Den återkoppling jag oftast får handlar om lugnet i
+                genomförandet och känslan av att allt bara flyter på. För mig
+                är det ett viktigt kvitto - när gästerna lämnar nöjda,
+                uppskattande och med en positiv upplevelse i kroppen vet jag att
+                helheten har hållit, och att arrangören kunnat känna sig trygg
+                hela vägen.
               </p>
             </div>
           </div>

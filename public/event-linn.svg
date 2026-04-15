@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12100D"/>
+      <stop offset="1" stop-color="#070707"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(560 160) rotate(20) scale(620 290)">
+      <stop stop-color="#F5DFA3" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#F5DFA3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect width="1200" height="700" fill="url(#glow)"/>
+  <circle cx="960" cy="500" r="190" fill="#C8A04A" fill-opacity="0.18"/>
+  <rect x="74" y="72" width="232" height="38" rx="19" fill="#111111" stroke="#F5DFA3" stroke-opacity="0.5"/>
+  <text x="102" y="97" fill="#F5DFA3" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="2">UTVALT EVENT</text>
+  <text x="74" y="260" fill="#F5DFA3" font-family="Montserrat, Arial, sans-serif" font-size="64" font-weight="700">LINN KARLSSON</text>
+  <text x="74" y="335" fill="#F5DFA3" font-family="Montserrat, Arial, sans-serif" font-size="46" font-weight="700">25-ARS OCH EXAMENSFEST</text>
+  <text x="74" y="390" fill="#F0F0F0" font-family="Montserrat, Arial, sans-serif" font-size="29" opacity="0.9">Privat event med exklusiv helhetsplanering</text>
+</svg>

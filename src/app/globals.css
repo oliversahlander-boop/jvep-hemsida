@@ -808,8 +808,8 @@ textarea {
 
 .profile-story {
   display: grid;
-  grid-template-columns: minmax(320px, 0.95fr) minmax(0, 1.05fr);
-  gap: 4rem;
+  grid-template-columns: minmax(180px, 0.55fr) minmax(0, 1.45fr);
+  gap: 3rem;
   align-items: center;
 }
 
@@ -820,7 +820,9 @@ textarea {
   background:
     radial-gradient(circle at top, rgba(245, 223, 163, 0.12), transparent 42%),
     rgba(255, 255, 255, 0.02);
-  min-height: 36rem;
+  width: min(230px, 100%);
+  min-height: 24rem;
+  justify-self: center;
 }
 
 .profile-story__image {
@@ -1137,5 +1139,30 @@ textarea {
   .button,
   .button-row--stack .button {
     width: 100%;
+  }
+}
+
+/* ── Mobile: header kompakt ── */
+@media (max-width: 600px) {
+  .site-header__inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 0;
+  }
+
+  .site-header__inner > a {
+    flex: 1 1 auto;
+  }
+
+  .site-nav {
+    flex: 0 0 100%;
+    gap: 0.5rem 1rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .site-nav a {
+    font-size: 0.88rem;
   }
 }

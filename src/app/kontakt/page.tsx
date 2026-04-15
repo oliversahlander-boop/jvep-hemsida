@@ -2,27 +2,23 @@ import type { Metadata } from "next";
 import ContactForm from "./contact-form";
 
 export const metadata: Metadata = {
-  title: "Kontakt",
+  title: "Kontakt – Boka eller skicka förfrågan",
   description:
-    "Kontakta JV Event Planning för att boka eller skicka en förfrågan om ert nästa event.",
+    "Kontakta JV Event Planning för att boka eller skicka en förfrågan om ert nästa event. Snabb återkoppling, personligt bemötande och en tydlig väg framåt.",
+  alternates: {
+    canonical: "https://jvep.se/kontakt",
+  },
+  openGraph: {
+    url: "https://jvep.se/kontakt",
+    title: "Kontakt – Boka eller skicka förfrågan | JV Event Planning",
+    description:
+      "Skicka en förfrågan om ert nästa event. Snabb återkoppling och personligt bemötande.",
+  },
 };
 
 export default function ContactPage() {
   return (
     <div className="page-section">
-      <section className="subhero">
-        <div className="container subhero__content reveal">
-          <p className="eyebrow">Kontakt</p>
-          <h1>Berätta om ert event så tar vi nästa steg tillsammans</h1>
-          <p>
-            Oavsett om ni planerar ett företagsevent, en fest eller ett firande
-            med familj och vänner är ni varmt välkomna att höra av er. Vi svarar
-            snabbt och hjälper er vidare med ett upplägg som passar syfte,
-            budget och ambitionsnivå.
-          </p>
-        </div>
-      </section>
-
       <section className="content-section">
         <div className="container contact-layout">
           <div className="contact-card reveal">
